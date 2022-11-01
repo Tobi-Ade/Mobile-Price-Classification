@@ -19,19 +19,19 @@ The dataset used for this project, as well as the description can be found [here
 The price-range column is our target column
 
 ## 2 Project Outline 
-- [Jupyter Notebook](#)<br>
+- [Jupyter Notebook](https://github.com/Tobi-Ade/Mobile-Price-Classification/blob/main/Mobile%20Price.ipynb)<br>
   Here we clean the data, carry out exploratory data analysis, train and tune different machine learning models and see how well they perform on the data
  
-- [Training the Model](#)<br>
+- [Training the Model](https://github.com/Tobi-Ade/Mobile-Price-Classification/blob/main/train.py)<br>
 Here the final training occurs. We select the best model, and save it to a file so that it can be used on new data 
 
-- [Creating a Flask App](#)<br>
-This is where we create a service for classiying new devices. We use the saved model to classify any new device when its features are sent to this flask app. 
+- [Creating a Flask App](https://github.com/Tobi-Ade/Mobile-Price-Classification/blob/main/predict.py)<br>
+This is where we write a script for serving the model. We use the saved model to classify any new device when its features are sent to this flask app. 
 
-- [Testing the service ](#)<br>
+- [Testing the service ](https://github.com/Tobi-Ade/Mobile-Price-Classification/blob/main/request.py)<br>
 Here we write a script for testing our classification service. We send a request to the flask app and it returns the price range of the device.
 
-- [Creating a Dockerfile](#)<br>
+- [Creating a Dockerfile](https://github.com/Tobi-Ade/Mobile-Price-Classification/blob/main/Dockerfile)<br>
 - We create a virtual environment using docker and run our classificatiion service here.
 
 ## 3 How to Run The Project
