@@ -9,7 +9,7 @@
 4. [References](#References)
 5. [Contact Me](#contact-me)
 
-## 1 Problem Definition
+## Problem Definition
 Setting the prices of mobile devices for your store is no easy feat. You have to take into account various features of the phone and come up with a suitable price range. Doing this for every device is definitely a full time job! But what if we can just input the features of the device and get a price range autonatically? Sounds cool!
 
 In this project, we build a model that classifies the price-range of a mobile device based on it's features. The project covers everything from loading the data, to eventually deploying the model. By now we can tell that the price-range column is going to be our target column.
@@ -18,7 +18,7 @@ The dataset used for this project, as well as the description can be found [here
 
 The price-range column is our target column
 
-## 2 Project Outline 
+## Project Outline 
 - [Jupyter Notebook](https://github.com/Tobi-Ade/Mobile-Price-Classification/blob/main/Mobile%20Price.ipynb)<br>
   Here we clean the data, carry out exploratory data analysis, train and tune different machine learning models and see how well they perform on the data
  
@@ -34,7 +34,7 @@ Here we write a script for testing our classification service. We send a request
 - [Creating a Dockerfile](https://github.com/Tobi-Ade/Mobile-Price-Classification/blob/main/Dockerfile)<br>
 - We create a virtual environment using docker and run our classificatiion service here.
 
-## 3 How to Run The Project
+## How to Run The Project
 Please note that these steps are to be carried out in a terminal window like command prompt or git bash<br>
   - Clone the repository to your computer using:  <br>
   ```bash
