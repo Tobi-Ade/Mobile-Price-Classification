@@ -105,7 +105,7 @@ Please note that these steps are to be carried out in a terminal window like com
   ## References 
   - [ML Zoomcamp project criteria](https://github.com/alexeygrigorev/mlbookcamp-code/tree/master/course-zoomcamp/projects)
   - [Data Source and Problem information](https://www.kaggle.com/datasets/iabhishekofficial/mobile-price-classification)
-  - [Image source](#http://koreabizwire.com/wp/wp-content/uploads/2020/07/thumb_2949993309_IAzvNfTX_01.jpg)
+  - [Image source](http://koreabizwire.com/wp/wp-content/uploads/2020/07/thumb_2949993309_IAzvNfTX_01.jpg)
   - [Insurance Forecast by Carolina Dias](https://github.com/diascarolina/project-insurance-forecast)
   - [Learn Markdown](https://www.youtube.com/watch?v=bTVIMt3XllM&t=5s)
   - [Docker Hub Quickstart](https://docs.docker.com/docker-hub/)
