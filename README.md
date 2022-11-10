@@ -105,7 +105,7 @@ Please note that these steps are to be carried out in a terminal window like com
   docker run -it --rm -p 9696:9696 mobile_price_class:latest
   ```
   
-  ###Cloud Deployment for this project is still in progress!
+  ### Cloud Deployment for this project is still in progress!
   
   
   ## References 
