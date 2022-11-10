@@ -10,13 +10,12 @@
 5. [Contact Me](#contact-me)
 
 ## Problem Definition
-Setting the prices of mobile devices for your store is no easy feat. You have to take into account various features of the phone and come up with a suitable price range. Doing this for every device is definitely a full time job! But what if we can just input the features of the device and get a price range autonatically? Sounds cool!
+Claaifying prices of  devices for your mobile phone store is no easy feat. You have to take into account various features of a device and come up with a suitable price range. Doing this for every device is definitely a full time job! But what if we can just input the features of the device and get the price range automatically? Sounds cool!
 
 In this project, we build a model that classifies the price-range of a mobile device based on it's features. The project covers everything from loading the data, to eventually deploying the model. By now we can tell that the price-range column is going to be our target column.
  
-The dataset used for this project, as well as the description can be found [here](https://www.kaggle.com/datasets/iabhishekofficial/mobile-price-classification?select=train.csv)
+The dataset used for this project, as well as the description, can be found [here](https://www.kaggle.com/datasets/iabhishekofficial/mobile-price-classification?select=train.csv)
 
-The price-range column is our target column
 
 ## Project Outline 
 - [Jupyter Notebook](https://github.com/Tobi-Ade/Mobile-Price-Classification/blob/main/Mobile%20Price.ipynb)<br>
@@ -38,7 +37,7 @@ Here we write a script for testing our classification service. We send a request
 Please note that these steps are to be carried out in a terminal window like command prompt or git bash<br>
   - Clone the repository to your computer using:  <br>
   ```bash
-  git clone 
+  git clone https://github.com/Tobi-Ade/Mobile-Price-Classification.git
   ```
   <br>
   
@@ -49,7 +48,7 @@ Please note that these steps are to be carried out in a terminal window like com
   <br>
   You should now be in the project folder
   
-  - The libraries used in this project can be found in the **requirements.txt** file. Before downloading it is advisable to create a virtual environment and download     all the dependencies here to keep your system settings intact. You can do this by running: <br>
+  - The libraries used in this project can be found in the **requirements.txt** file. It is advisable to run this project in a virtual environment to avoid issues with your system configuration. To create a virtual environment with venv <br>
   ```bash
   python -m venv mobile-env
   ```
@@ -59,8 +58,6 @@ Please note that these steps are to be carried out in a terminal window like com
    mobile-env\Scripts\activate.bat
    ```
    <br>
-   
-   You can skip this if you don't want to use a virtual environment
    
    Now install the libraries from the requirements.txt file by running:<br>
    
@@ -73,16 +70,22 @@ Please note that these steps are to be carried out in a terminal window like com
    python train.py
    ```
    
-  Now deploy the flask app by running the predict.py file. It is recommended to do this with a production server like waitress(windows OS) or gunicorn(UNIX).<br>
+  Now deploy the flask app locally by running the predict.py file. It is recommended to do this with a production server like waitress(windows OS) or gunicorn(UNIX).<br>
   You can still run it directly, with:   <br>
   ```bash
   python predict.py
   ```
   
-  with a production server: <br>
+  with waitress: <br>
  
   ```bash
   waitress-serve --listen=0.0.0.0:9696 predict:app
+  ```
+  
+   with gunicorn: <br>
+ 
+  ```bash
+  gunicorn --bind 0.0.0.0:9696 predict:app
   ```
   
   Now the classification service should be running locally on "http://0.0.0.0:9696"
@@ -101,6 +104,9 @@ Please note that these steps are to be carried out in a terminal window like com
   ```bash
   docker run -it --rm -p 9696:9696 mobile_price_class:latest
   ```
+  
+  ###Cloud Deployment for this project is still in progress!
+  
   
   ## References 
   - [ML Zoomcamp project criteria](https://github.com/alexeygrigorev/mlbookcamp-code/tree/master/course-zoomcamp/projects)
