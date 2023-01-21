@@ -10,7 +10,7 @@
 5. [Contact Me](#contact-me)
 
 ## Problem Definition
-Claaifying prices of  devices for your mobile phone store is no easy feat. You have to take into account various features of a device and come up with a suitable price range. Doing this for every device is definitely a full time job! But what if we can just input the features of the device and get the price range automatically? Sounds cool!
+Classifying prices of  devices for your mobile phone store is no easy feat. You have to take into account various features of a device and come up with a suitable price range. Doing this for every device is definitely a full time job! But what if we can just input the features of the device and get the price range automatically? Sounds cool!
 
 In this project, we build a model that classifies the price-range of a mobile device based on it's features. The project covers everything from loading the data, to eventually deploying the model. By now we can tell that the price-range column is going to be our target column.
  
